@@ -1,7 +1,7 @@
 {
-  "name": "webpack-demo",
+  "name": "webpack",
   "version": "1.0.0",
-  "description": "m",
+  "description": "Personal Portofolio",
   "private": true,
   "scripts": {
     "wp:watch": "npx webpack --config webpack.config.js -w",
@@ -9,7 +9,7 @@
     "webpack:sass": "run-p wp:watch sass:watch"
   },
   "keywords": [],
-  "author": "",
+  "author": "al-amiir",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.13.14",

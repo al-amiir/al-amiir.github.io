@@ -11,9 +11,9 @@ let prevButton = document.querySelector(".button__certificate-prev");
 let certificateImage = document.querySelector(".certificate__image");
 // Image sorces array
 let certificateImageArray = [
-  "./material/certificates/OOP.jpg",
-  "./material/coding.png",
-  "./material/certificates/OOP.jpg",
+  "./assets/material/certificates/OOP.jpg",
+  "./assets/material/coding.png",
+  "./assets/material/certificates/OOP.jpg",
 ];
 // Set counter
 let counter = 0;

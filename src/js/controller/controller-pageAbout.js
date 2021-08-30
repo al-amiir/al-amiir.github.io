@@ -23,9 +23,9 @@ let introTextArray3 = ["I Choosed Front-end Developer Track"];
 let arrayIntro = [introTextArray1, introTextArray2, introTextArray3];
 // Image sources to loop over them
 let arrayImagessrc = [
-  "./material/elamir.jpg",
-  "./material/navy.jpg",
-  "./material/elamir2.jpg",
+  "./assets/material/elamir.jpg",
+  "./assets/material/navy.jpg",
+  "./assets/material/elamir2.jpg",
 ];
 
 let pointer = document.querySelectorAll(".page__about .progress__pointer span");
