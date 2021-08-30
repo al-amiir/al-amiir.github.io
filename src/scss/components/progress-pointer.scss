@@ -1,0 +1,14 @@
+.progress__pointer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0px 6px 4px black);
+  span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: #4c4747;
+    margin: 10px;
+  }
+}

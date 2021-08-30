@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100&display=swap");
+
+@import "./abstracts/mixins";
+
+@import "./base/base";
+@import "./base/typography";
+
+@import "./components/buttons.scss";
+@import "./components/glitch.scss";
+@import "./components/menu.scss";
+@import "./components/progress-pointer.scss";
+
+@import "./pages/home.scss";
+@import "./pages/resume.scss"

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Rogan';
+    src: local('Rogan Thin'), local('Rogan-Thin'),
+        url('Rogan-Thin.woff2') format('woff2'),
+        url('Rogan-Thin.woff') format('woff'),
+        url('Rogan-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }

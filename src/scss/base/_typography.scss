@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+body {
+  font-family: "Jura", sans-serif;
+}
+
+.text {
+  z-index: 1;
+  &__logo {
+    position: fixed;
+    top: 20px;
+    left: 22px;
+    font-size: 5rem;
+    letter-spacing: 10px;
+    color: #efb462;
+    backdrop-filter: blur(3px);
+    border-bottom: 3px solid;
+  }
+  &__portofolio {
+    position: fixed;
+    right: 0;
+    top: 36vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: red;
+    backdrop-filter: blur(4px);
+    border: 2px solid;
+    font-weight: 700;
+    padding: 14px;
+
+    span {
+      color: #efb462;
+      font-size: 1.6rem;
+    }
+  }
+  &__intro {
+    position: fixed;
+    bottom: 8px;
+    left: 0;
+    color: #ffb145;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 2.3rem;
+    backdrop-filter: blur(10px);
+    margin: 0px 20px 0px 20px;
+    padding: 8px;
+
+    & > * {
+      width: 100%;
+      border-bottom: 2px solid #ffae47;
+    }
+    h1 {
+      font-size: 6rem;
+      letter-spacing: 10px;
+    }
+    div {
+      display: flex;
+      justify-content: space-evenly;
+      font-size: 2rem;
+    }
+    &--p {
+      background-color: #3100007a;
+      backdrop-filter: blur(4px) contrast(2);
+      margin: 5px;
+    }
+  }
+}

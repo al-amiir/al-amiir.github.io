@@ -1,0 +1,86 @@
+.button {
+  &__home {
+    position: absolute;
+    top: 4vh;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    z-index: 3000;
+    background-color: #051c26;
+    color: #ffb275;
+    filter: drop-shadow(2px 4px 6px black);
+  }
+  &__menu {
+    position: fixed;
+    right: 5vw;
+    top: 7vh;
+    color: rgb(239, 180, 98);
+    background-color: transparent;
+    border: 1px solid;
+    cursor: pointer;
+    z-index: 4000;
+    transform: scale(1.3);
+  }
+  &-personal {
+    position: absolute;
+    top: 200px;
+    background-color: #051c26;
+    width: 36px;
+    height: 36px;
+    border-radius: 17px;
+    color: #e3a06b;
+    filter: drop-shadow(2px 4px 6px black);
+    border: none;
+    cursor: pointer;
+    &-next {
+      right: -40px;
+    }
+    &-prev {
+      left: -40px;
+    }
+  }
+  &__category {
+    position: absolute;
+    opacity: 1;
+    left: 0px;
+    font-size: 6rem;
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+  }
+  &__certificate {
+    background-color: #000000d1;
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 23px;
+    color: wheat;
+    margin: 10px;
+    filter: drop-shadow(0px 0px 8px black);
+    &-prev {
+      transform: rotateZ(180deg);
+    }
+  }
+
+  &__about {
+    top: 20px;
+  }
+  &__projects {
+    top: 100px;
+  }
+  &__certificates {
+    top: 190px;
+  }
+  &__resume {
+    top: 277px;
+  }
+  &__contact {
+    top: 367px;
+  }
+}
