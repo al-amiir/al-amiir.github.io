@@ -7,6 +7,4 @@
 // npm install --save-dev css-loader
 // npm install --save-dev style-loader
 
-// import Parallax from "parallax-js";
-import anime from "animejs/lib/anime.es.js";
 import "./js/controller/controllerMain";

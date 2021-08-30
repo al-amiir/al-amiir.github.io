@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var animejs_lib_anime_es_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! animejs/lib/anime.es.js */ \"./node_modules/animejs/lib/anime.es.js\");\n/* harmony import */ var _js_controller_controllerMain__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/controller/controllerMain */ \"./src/js/controller/controllerMain.js\");\n// npm i webpack webpack-cli --save-dev\n// npm i --save-dev babel-loader @babel/core\n// npx webpack\n// npx webpack --config webpack.config.js\n// npm install sass-loader sass webpack --save-dev\n// npm install --save-dev sass\n// npm install --save-dev css-loader\n// npm install --save-dev style-loader\n\n// import Parallax from \"parallax-js\";\n\n\n\n\n//# sourceURL=webpack://webpack-demo/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_controller_controllerMain__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/controller/controllerMain */ \"./src/js/controller/controllerMain.js\");\n// npm i webpack webpack-cli --save-dev\n// npm i --save-dev babel-loader @babel/core\n// npx webpack\n// npx webpack --config webpack.config.js\n// npm install sass-loader sass webpack --save-dev\n// npm install --save-dev sass\n// npm install --save-dev css-loader\n// npm install --save-dev style-loader\n\n\n\n\n//# sourceURL=webpack://webpack-demo/./src/index.js?");
 
 /***/ }),
 

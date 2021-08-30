@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "wp:watch": "npx webpack --config webpack.config.js -w",
-    "sass:watch": "sass ./src/scss/main.scss ./assets/css/main.css --watch",
+    "sass:watch": "sass ./src/scss/main.scss ./assets/dist/css/main.css --watch",
     "webpack:sass": "run-p wp:watch sass:watch"
   },
   "keywords": [],
