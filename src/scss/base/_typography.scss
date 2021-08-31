@@ -12,14 +12,17 @@ body {
     left: 22px;
     font-size: 5rem;
     letter-spacing: 10px;
-    color: #efb462;
+    color: #ffb145;
     backdrop-filter: blur(3px);
     border-bottom: 3px solid;
+    @include respond(phone) {
+      font-size: 3.7rem;
+    }
   }
   &__portofolio {
     position: fixed;
     right: 0;
-    top: 36vh;
+    top: 32vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,10 +33,9 @@ body {
     border: 2px solid;
     font-weight: 700;
     padding: 14px;
-
-    span {
-      color: #efb462;
-      font-size: 1.6rem;
+    @include respond(phone) {
+      font-size: 1.2rem;
+      top: 25vh;
     }
   }
   &__intro {
@@ -48,24 +50,18 @@ body {
     backdrop-filter: blur(10px);
     margin: 0px 20px 0px 20px;
     padding: 8px;
-
+    @include respond(tab-port) {
+      font-size: 1.9rem;
+    }
+    @include respond(phone) {
+      font-size: 1.4rem;
+    }
+    @include respond(small-phone) {
+      font-size: 1.2rem;
+    }
     & > * {
       width: 100%;
-      border-bottom: 2px solid #ffae47;
-    }
-    h1 {
-      font-size: 6rem;
-      letter-spacing: 10px;
-    }
-    div {
-      display: flex;
-      justify-content: space-evenly;
-      font-size: 2rem;
-    }
-    &--p {
-      background-color: #3100007a;
-      backdrop-filter: blur(4px) contrast(2);
-      margin: 5px;
+      margin-bottom: 5px;
     }
   }
 }

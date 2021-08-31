@@ -33,8 +33,15 @@
     backdrop-filter: blur(4px);
     .personal {
       position: relative;
-      // top: 40px;
       margin: 10px;
+      @include respond(phone) {
+        transform: scale(0.8);
+        height: 285px;
+      }
+      @include respond(small-phone) {
+        transform: scale(0.6);
+        height: 240px;
+      }
       &__image {
         height: 330px;
         width: 330px;
@@ -46,6 +53,15 @@
         font-weight: bold;
         color: wheat;
         filter: drop-shadow(2px 4px 3px black);
+
+        @include respond(phone) {
+          font-size: 2rem;
+          margin: 10px;
+        }
+        @include respond(small-phone) {
+          font-size: 1.7rem;
+          margin: 10px;
+        }
         & p {
           border-bottom: 1px solid;
         }
@@ -63,32 +79,48 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    .certificate__box {
-      // overflow: hidden;
-    }
+
     .certificate__image {
       position: relative;
       width: 600px;
       filter: contrast(1.1) drop-shadow(13px 13px 10px black);
+      @include respond(phone) {
+        width: 448px;
+      }
+      @include respond(meduim-phone) {
+        width: 345px;
+      }
+      @include respond(small-phone) {
+        width: 240px;
+      }
     }
   }
   &__contact {
-    background-color: #072f2a;
+    background-color: #ad820a;
     z-index: 5000;
     &-header {
       position: relative;
-      font-size: 10rem;
       top: 1vh;
       left: 3vh;
       filter: drop-shadow(2px 4px 6px black);
+      width: 90vw;
+      margin-top: 47px;
+      h1 {
+        font-size: 10rem;
+        @include respond(meduim-phone) {
+          font-size: 7rem;
+        }
+        @include respond(small-phone) {
+          font-size: 4rem;
+        }
+      }
       p {
         font-size: 2rem;
-        width: 63rem;
         text-align: justify;
       }
     }
     &-ul {
-      font-size: 5rem;
+      font-size: 4rem;
       list-style: square;
       width: 100vw;
       height: 100vh;
@@ -97,6 +129,15 @@
       align-items: flex-start;
       color: wheat;
       padding: 20px;
+      @include respond(phone) {
+        font-size: 3rem;
+      }
+      @include respond(meduim-phone) {
+        font-size: 2.7rem;
+      }
+      @include respond(small-phone) {
+        font-size: 2rem;
+      }
       li {
         border-bottom: 2px solid;
         a {

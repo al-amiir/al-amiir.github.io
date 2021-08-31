@@ -51,14 +51,16 @@ function createAndTyping(arr) {
   });
 }
 export function pageAbout() {
-  document.querySelector(".menu__button-1").addEventListener("click", () => {
-    // First personal text at beggining of click
-    setTimeout(() => {
-      createAndTyping(introTextArray1);
-      pointer[0].style.backgroundColor = "white";
-      pointer[0].style.filter = "drop-shadow(white 0px 0px 6px)";
-    }, 1000);
-  });
+  document
+    .querySelector(".button__category-1")
+    .addEventListener("click", () => {
+      // First personal text at beggining of click
+      setTimeout(() => {
+        createAndTyping(introTextArray1);
+        pointer[0].style.backgroundColor = "white";
+        pointer[0].style.filter = "drop-shadow(white 0px 0px 6px)";
+      }, 1000);
+    });
 
   prevButton.style.opacity = ".5";
   prevButton.style.cursor = "not-allowed";

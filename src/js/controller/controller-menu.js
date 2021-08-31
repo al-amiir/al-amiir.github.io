@@ -95,19 +95,19 @@ menuButton.addEventListener("click", async () => {
       menuCategoryButtonsText.forEach((m, i) => {
         menuCategoryButtons.elementCreation(
           ".menu",
-          `menu__button menu__button-${i + 1}`,
+          `button__category button__category-${i + 1}`,
           "button",
           1
         );
         // 2)
         menuCategoryButtons.textTyping(
           menuCategoryButtonsText[i],
-          `.menu__button-${i + 1}`,
+          `.button__category-${i + 1}`,
           80
         );
         // 3)
         document
-          .querySelector(`.menu__button-${i + 1}`)
+          .querySelector(`.button__category-${i + 1}`)
           .addEventListener("click", function name() {
             menuPageSliding.pageFading(
               `.${pages[i]}`,
