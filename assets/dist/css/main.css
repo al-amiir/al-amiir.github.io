@@ -606,6 +606,9 @@ iframe {
   font-size: 1.8rem;
   margin-bottom: 10px;
 }
+.resume__content-body a {
+  text-decoration: none;
+}
 .resume__content-body .track a {
   text-decoration: none;
   font-size: 1.8rem;
