@@ -25,52 +25,53 @@ let pointer = document.querySelectorAll(
 
 // Certificate page
 export function pageCertificate() {
-  pointer[0].style.backgroundColor = "white";
-  pointer[counter].style.filter = "drop-shadow(white 0px 0px 6px)";
-
-  prevButton.style.opacity = ".5";
-  prevButton.style.cursor = "not-allowed";
-  prevButton.style.filter = "drop-shadow(0px 0px 0px black)";
-  prevButton.disabled = true;
-
-  nextButton.addEventListener("click", () => {
-    counter++;
-    anime({
-      targets: ".certificate__image",
-      opacity: [1, 0, 1],
-      duration: 1000,
-      easing: "linear",
-    });
-    setTimeout(() => {
-      certificateImage.src = certificateImageArray[counter];
-    }, 500);
-    // Next button action
-    button.nextButtonClickLogic(
-      nextButton,
-      prevButton,
-      counter,
-      certificateImageArray
-    );
-    pointerFunc(pointer, counter);
-  });
-  prevButton.addEventListener("click", () => {
-    counter--;
-    anime({
-      targets: ".certificate__image",
-      opacity: [1, 0, 1],
-      duration: 1000,
-      easing: "linear",
-    });
-    setTimeout(() => {
-      certificateImage.src = certificateImageArray[counter];
-    }, 500);
-    // Prev button
-    button.prevButtonClickLogic(
-      nextButton,
-      prevButton,
-      counter,
-      certificateImageArray
-    );
-    pointerFunc(pointer, counter);
-  });
+  counter = 0;
+  certificateImage.src = certificateImageArray[counter];
+  pointerFunc(pointer, counter);
+  button.prevButtonClickLogic(
+    nextButton,
+    prevButton,
+    counter,
+    certificateImageArray
+  );
 }
+nextButton.addEventListener("click", () => {
+  counter++;
+  anime({
+    targets: ".certificate__image",
+    opacity: [1, 0, 1],
+    duration: 1000,
+    easing: "linear",
+  });
+  setTimeout(() => {
+    certificateImage.src = certificateImageArray[counter];
+  }, 500);
+  // Next button action
+  button.nextButtonClickLogic(
+    nextButton,
+    prevButton,
+    counter,
+    certificateImageArray
+  );
+  pointerFunc(pointer, counter);
+});
+prevButton.addEventListener("click", () => {
+  counter--;
+  anime({
+    targets: ".certificate__image",
+    opacity: [1, 0, 1],
+    duration: 1000,
+    easing: "linear",
+  });
+  setTimeout(() => {
+    certificateImage.src = certificateImageArray[counter];
+  }, 500);
+  // Prev button
+  button.prevButtonClickLogic(
+    nextButton,
+    prevButton,
+    counter,
+    certificateImageArray
+  );
+  pointerFunc(pointer, counter);
+});

@@ -5,6 +5,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @include respond(tab-port) {
+    transform: scale(0.7);
+    height: 963px;
+  }
+  @include respond(phone) {
+    transform: scale(0.5);
+    height: 710px;
+  }
+  @include respond(meduim-phone) {
+    transform: scale(0.4);
+    height: 565.3px;
+  }
+  @include respond(small-phone) {
+    transform: scale(0.25);
+    height: 447.3px;
+  }
+
   h1 {
     font-size: 2rem;
     color: #9e7219;

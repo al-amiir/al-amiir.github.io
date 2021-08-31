@@ -126,7 +126,7 @@ body {
   position: fixed;
   right: 5vw;
   top: 7vh;
-  color: #efb462;
+  color: #ffb145;
   background-color: transparent;
   border: 1px solid;
   cursor: pointer;
@@ -252,6 +252,13 @@ body {
   margin: 10px;
 }
 
+iframe {
+  width: 100vw;
+  height: 100vh;
+  filter: drop-shadow(0px 0px 16px black);
+  margin: 44px 0 10px 0;
+}
+
 .home {
   position: relative;
   width: 100vw;
@@ -314,6 +321,7 @@ body {
   font-weight: bold;
   color: wheat;
   filter: drop-shadow(2px 4px 3px black);
+  text-align: center;
 }
 @media only screen and (max-width: 37.5em) {
   .page__about .personal__text {
@@ -326,9 +334,6 @@ body {
     font-size: 1.7rem;
     margin: 10px;
   }
-}
-.page__about .personal__text p {
-  border-bottom: 1px solid;
 }
 .page__projects {
   background-color: #091f38;
@@ -393,7 +398,7 @@ body {
 }
 .page__contact-ul {
   font-size: 4rem;
-  list-style: square;
+  list-style: none;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -442,6 +447,30 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 56.25em) {
+  .resume {
+    transform: scale(0.7);
+    height: 963px;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .resume {
+    transform: scale(0.5);
+    height: 710px;
+  }
+}
+@media only screen and (max-width: 28em) {
+  .resume {
+    transform: scale(0.4);
+    height: 565.3px;
+  }
+}
+@media only screen and (max-width: 21.875em) {
+  .resume {
+    transform: scale(0.25);
+    height: 447.3px;
+  }
 }
 .resume h1 {
   font-size: 2rem;

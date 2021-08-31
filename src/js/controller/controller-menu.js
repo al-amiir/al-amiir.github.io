@@ -57,7 +57,7 @@ import anime from "animejs/lib/anime.es.js";
 let menuPageSliding = new Page();
 
 // Menu category buttons creation
-let menuCategoryButtonsText = ["About", "Projects", "Certificates", "Contact"];
+let menuCategoryButtonsText = ["About", "Resume", "Certificates", "Contact"];
 let pages = [
   "page__about",
   "page__projects",
@@ -70,7 +70,7 @@ let menuButton = document.querySelector(".button__menu");
 let menuCategoryButtons = new Text();
 let clicked = true;
 
-menuButton.addEventListener("click", async () => {
+menuButton.addEventListener("click", () => {
   if (clicked == true) {
     // Clear innerHtml if there ..
     menuCategoryButtons.elementDeletion(".menu");
@@ -119,8 +119,16 @@ menuButton.addEventListener("click", async () => {
       });
     }, 1000);
     setTimeout(() => {
-      pageAbout();
-      pageCertificate();
+      document
+        .querySelector(".button__category-1")
+        .addEventListener("click", () => {
+          pageAbout();
+        });
+      document
+        .querySelector(".button__category-3")
+        .addEventListener("click", () => {
+          pageCertificate();
+        });
     }, 1500);
 
     clicked = !clicked;
@@ -128,7 +136,7 @@ menuButton.addEventListener("click", async () => {
     // Button menu reverse
     anime({
       targets: ".button__menu",
-      color: ["rgb(231, 15, 7)", "rgb(239, 180, 98)"],
+      color: ["rgb(231, 15, 7)", "rgb(255 177 69)"],
       duration: 1000,
     });
     // Menu page reverse
@@ -138,6 +146,7 @@ menuButton.addEventListener("click", async () => {
       document.querySelector(".menu").style.transform =
         "translateX(0vw) translateY(0vh)";
     }, 600);
+
     clicked = !clicked;
   }
 });

@@ -6,7 +6,7 @@ let colors = [
   "rgb(0 0 0 / 50%)",
   "rgb(10 102 194 / 63%)",
   "rgb(81 170 78 / 63%)",
-  "rgb(24 119 242 / 63%)",
+  "rgb(198 85 169 /63%)",
 ];
 list.forEach((l, i) => {
   l.addEventListener("mouseover", (e) => {
