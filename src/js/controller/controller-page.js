@@ -9,6 +9,7 @@ let homeButtons = document.querySelectorAll(".button__home");
 
 let pages = [
   "page__about",
+  "page__resume",
   "page__projects",
   "page__certificates",
   "page__contact",

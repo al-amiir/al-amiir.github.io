@@ -10,9 +10,8 @@ let introText = new Text();
 // Text arrays
 let introTextArray1 = [
   "Hello, I'm Al-Amir,",
-  "a Marine Engineer,",
   "Graduated From Faculty Of Engineering,",
-  "Marine Department.",
+  "as a Marine Engineer,",
 ];
 let introTextArray2 = [
   "I Joined Naval Forces For Three Years",

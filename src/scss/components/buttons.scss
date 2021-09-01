@@ -45,7 +45,8 @@
   &__category {
     font-family: "Jura", sans-serif;
     z-index: 1000;
-    font-size: 4rem;
+    font-size: 3rem;
+    letter-spacing: 8px;
     color: #ff9344;
     margin: 14px;
     cursor: pointer;
@@ -56,8 +57,10 @@
     transition: 0.4s;
     padding: 0px 4px 0px 4px;
     &:hover {
-      background-color: wheat;
-      border-radius: 5px;
+      background-color: #a20a0a;
+    }
+    @include respond(small-phone) {
+      letter-spacing: 0px;
     }
   }
   &__certificate {

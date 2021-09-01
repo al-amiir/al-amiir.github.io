@@ -57,9 +57,16 @@ import anime from "animejs/lib/anime.es.js";
 let menuPageSliding = new Page();
 
 // Menu category buttons creation
-let menuCategoryButtonsText = ["About", "Resume", "Certificates", "Contact"];
+let menuCategoryButtonsText = [
+  "About",
+  "Resume",
+  "Projects",
+  "Certificates",
+  "Contact",
+];
 let pages = [
   "page__about",
+  "page__resume",
   "page__projects",
   "page__certificates",
   "page__contact",

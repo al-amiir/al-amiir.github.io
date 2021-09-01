@@ -10,11 +10,12 @@ body {
     position: fixed;
     top: 20px;
     left: 22px;
+    font-weight: 100;
     font-size: 5rem;
     letter-spacing: 10px;
     color: #ffb145;
     backdrop-filter: blur(3px);
-    border-bottom: 3px solid;
+    border-bottom: 2px solid;
     @include respond(phone) {
       font-size: 3.7rem;
     }

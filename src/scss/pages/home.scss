@@ -68,9 +68,13 @@
       }
     }
   }
-  &__projects {
-    background-color: rgb(9, 31, 56);
+  &__resume {
+    background-color: rgb(31, 31, 31);
     z-index: 5000;
+  }
+  &__projects {
+    background-color: #a93802;
+    z-index: 4000;
   }
   &__certificates {
     background-color: #4a1818;
