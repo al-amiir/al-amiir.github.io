@@ -53,6 +53,7 @@
         font-weight: bold;
         color: wheat;
         filter: drop-shadow(2px 4px 3px black);
+        text-align: center;
         @include respond(phone) {
           font-size: 2rem;
           margin: 10px;

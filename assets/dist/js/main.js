@@ -36,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_
   \***********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _view_text__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../view/text */ \"./src/js/view/text.js\");\n\n\n// Intro string array\nlet introArray = [\n  \"My Name is Al-Amir, a 25 yrs Front-end Web Developer, who Loves To Combine Between Programming and Art\",\n  \"Alexandria, Egypt\",\n  \"\",\n  // \"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus fugarepellendus, temporibus veniam unde neque nesciunt et\",\n];\n\nlet text = new _view_text__WEBPACK_IMPORTED_MODULE_0__.Text();\n\n// String line typing\nintroArray.forEach((int, i) => {\n  text.textTyping(int, `.text__intro-p-${i}`, 20);\n});\n\ntext.textTyping(\"Al-Amir\", \".text__logo\", 100);\n\n\n//# sourceURL=webpack://webpack/./src/js/controller/controller-intro.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _view_text__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../view/text */ \"./src/js/view/text.js\");\n\n\n// Intro string array\nlet introArray = [\n  \"My Name is Al-Amir, a 25 yrs Front-end Web Developer, who Loves To Combine Between Programming and Art\",\n  \"Alexandria, Egypt\",\n];\n\nlet text = new _view_text__WEBPACK_IMPORTED_MODULE_0__.Text();\n\n// String line typing\nintroArray.forEach((int, i) => {\n  text.textTyping(int, `.text__intro-p-${i}`, 20);\n});\n\ntext.textTyping(\"Al-Amir\", \".text__logo\", 100);\n\n\n//# sourceURL=webpack://webpack/./src/js/controller/controller-intro.js?");
 
 /***/ }),
 

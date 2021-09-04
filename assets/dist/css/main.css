@@ -327,6 +327,7 @@ iframe {
   font-weight: bold;
   color: wheat;
   filter: drop-shadow(2px 4px 3px black);
+  text-align: center;
 }
 @media only screen and (max-width: 37.5em) {
   .page__about .personal__text {
