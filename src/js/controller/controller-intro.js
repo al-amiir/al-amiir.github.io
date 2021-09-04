@@ -2,7 +2,7 @@ import { Text } from "../view/text";
 
 // Intro string array
 let introArray = [
-  "My name is Al-Amir, a Front-end Web Developer, 25 years old   ",
+  "My Name is Al-Amir, a 25 y/d Front-end Web Developer, who Loves To Combine Between Programming and Art",
   "Alexandria, Egypt",
   "",
   // "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus fugarepellendus, temporibus veniam unde neque nesciunt et",

@@ -132,7 +132,7 @@ menuButton.addEventListener("click", () => {
           pageAbout();
         });
       document
-        .querySelector(".button__category-3")
+        .querySelector(".button__category-4")
         .addEventListener("click", () => {
           pageCertificate();
         });
