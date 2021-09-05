@@ -134,6 +134,23 @@ body {
   z-index: 4000;
   transform: scale(1.3);
 }
+.button__resumePdf {
+  position: absolute;
+  top: 4vh;
+  right: 77px;
+  width: 100px;
+  height: 39px;
+  color: #1f1f1f;
+  cursor: pointer;
+  border: none;
+  background-color: #845f14;
+  filter: drop-shadow(2px 4px 6px black);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 11px;
+}
 .button-personal {
   position: absolute;
   top: 200px;
