@@ -363,8 +363,47 @@ iframe {
   z-index: 5000;
 }
 .page__projects {
-  background-color: #a93802;
+  background-color: #ffb66c;
   z-index: 4000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page__projects figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 14px;
+  margin: 5px;
+}
+.page__projects-img {
+  width: 273px;
+  filter: contrast(1.1) saturate(1.1) drop-shadow(2px 4px 6px black);
+}
+.page__projects-text {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-left: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+}
+.page__projects-text p {
+  filter: drop-shadow(2px 0px 3px black);
+  margin-bottom: 7px;
+}
+.page__projects-text a {
+  text-align: center;
+  text-decoration: none;
+  color: wheat;
+  background-color: #051c26;
+  padding: 3px 9px;
+  border-radius: 3px;
+  cursor: pointer;
 }
 .page__certificates {
   background-color: #4a1818;
