@@ -363,7 +363,7 @@ iframe {
   z-index: 5000;
 }
 .page__projects {
-  background-color: #ffb66c;
+  background-color: black;
   z-index: 4000;
   display: flex;
   justify-content: center;
@@ -373,14 +373,24 @@ iframe {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid black;
   border-radius: 4px;
   padding: 14px;
   margin: 5px;
+  background-color: #ffb364;
+}
+@media only screen and (max-width: 28em) {
+  .page__projects figure {
+    flex-direction: column;
+  }
 }
 .page__projects-img {
-  width: 273px;
+  width: 222px;
   filter: contrast(1.1) saturate(1.1) drop-shadow(2px 4px 6px black);
+}
+@media only screen and (max-width: 28em) {
+  .page__projects-img {
+    width: 140px;
+  }
 }
 .page__projects-text {
   font-size: 2rem;
@@ -388,9 +398,19 @@ iframe {
   margin-left: 19px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   height: 100px;
+}
+@media only screen and (max-width: 37.5em) {
+  .page__projects-text {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 28em) {
+  .page__projects-text {
+    margin-left: 0;
+  }
 }
 .page__projects-text p {
   filter: drop-shadow(2px 0px 3px black);
