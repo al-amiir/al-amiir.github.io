@@ -79,10 +79,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      border-radius: 4px;
       padding: 14px;
       margin: 5px;
-      background-color: #ffb364;
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+      color: white;
       @include respond(meduim-phone) {
         flex-direction: column;
       }
@@ -91,17 +92,15 @@
       width: 222px;
       filter: contrast(1.1) saturate(1.1) drop-shadow(2px 4px 6px black);
       @include respond(meduim-phone) {
-        width: 140px;
+        width: 200px;
       }
     }
     &-text {
       font-size: 2rem;
-      font-weight: 700;
       margin-left: 19px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
       height: 100px;
       @include respond(phone) {
         font-size: 1rem;
@@ -114,6 +113,7 @@
         margin-bottom: 7px;
       }
       a {
+        width: 100px;
         text-align: center;
         text-decoration: none;
         color: wheat;

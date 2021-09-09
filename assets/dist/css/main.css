@@ -373,10 +373,11 @@ iframe {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 4px;
   padding: 14px;
   margin: 5px;
-  background-color: #ffb364;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  color: white;
 }
 @media only screen and (max-width: 28em) {
   .page__projects figure {
@@ -389,17 +390,15 @@ iframe {
 }
 @media only screen and (max-width: 28em) {
   .page__projects-img {
-    width: 140px;
+    width: 200px;
   }
 }
 .page__projects-text {
   font-size: 2rem;
-  font-weight: 700;
   margin-left: 19px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   height: 100px;
 }
 @media only screen and (max-width: 37.5em) {
@@ -417,6 +416,7 @@ iframe {
   margin-bottom: 7px;
 }
 .page__projects-text a {
+  width: 100px;
   text-align: center;
   text-decoration: none;
   color: wheat;
