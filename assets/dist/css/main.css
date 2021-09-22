@@ -668,7 +668,7 @@ body {
 }
 .resume__content-body ul {
   font-size: 1.8rem;
-  color: #dcc18f;
+  color: #ffdfa4;
   list-style: square;
   position: relative;
   left: 20px;
@@ -704,7 +704,7 @@ body {
 .resume__content-body .track a {
   text-decoration: none;
   font-size: 1.8rem;
-  color: #dcc18f;
+  color: #ffdfa4;
 }
 
 /*# sourceMappingURL=main.css.map */
