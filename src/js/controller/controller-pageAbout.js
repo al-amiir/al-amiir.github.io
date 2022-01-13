@@ -8,29 +8,13 @@ let button = new Button();
 // Create new class text
 let introText = new Text();
 // Text arrays
-let introTextArray1 = [
-  "Hello, I'm Al-Amir,",
-  "Graduated From Faculty Of Engineering,",
-  "as a Marine Engineer,",
-];
-let introTextArray2 = [
-  "I Joined Naval Forces For Three Years",
-  "Through This Interval",
-  "I Decided To Join Web Development Field.",
-];
-let introTextArray3 = [
-  "Now I'm a Front-end Web Developer",
-  "I'm Also Looking Forward To being,",
-  "a Full-Stack Web Developer In the Future.",
-];
+let introTextArray1 = ["Hello, I'm Al-Amir,", "Graduated From Faculty Of Engineering,", "as a Marine Engineer,"];
+let introTextArray2 = ["Then Joined Naval Forces For Three Years", "Through This Interval", "I Decided To Join Web Development Field."];
+let introTextArray3 = ["Now I'm a Front-end Web Developer", "I'm Also Looking Forward To being,", "a Full-Stack Web Developer In the Future."];
 // Compine both arrays to loop over them
 let arrayIntro = [introTextArray1, introTextArray2, introTextArray3];
 // Image sources to loop over them
-let arrayImagessrc = [
-  "./assets/material/photos/elamir1.jpg",
-  "./assets/material/photos/elamir2.jpg",
-  "./assets/material/photos/elamir3.jpg",
-];
+let arrayImagessrc = ["./assets/material/photos/elamir1.jpg", "./assets/material/photos/elamir2.jpg", "./assets/material/photos/elamir3.jpg"];
 
 let pointer = document.querySelectorAll(".page__about .progress__pointer span");
 
@@ -45,12 +29,7 @@ let homeButton = document.querySelector(".page__about .button__home");
 function createAndTyping(arr) {
   introText.elementDeletion(".personal__text");
   arr.forEach((a, i) => {
-    introText.elementCreation(
-      ".personal__text",
-      `personal__text-p personal__text-p-${i}`,
-      "p",
-      1
-    );
+    introText.elementCreation(".personal__text", `personal__text-p personal__text-p-${i}`, "p", 1);
     introText.textTyping(a, `.personal__text-p-${i}`, 30);
   });
 }
@@ -108,12 +87,7 @@ homeButton.addEventListener("click", () => {
   setTimeout(() => {
     counter = 0;
     document.querySelector(".personal__image").src = arrayImagessrc[counter];
-    button.prevButtonClickLogic(
-      nextButton,
-      prevButton,
-      counter,
-      arrayImagessrc
-    );
+    button.prevButtonClickLogic(nextButton, prevButton, counter, arrayImagessrc);
     pointerFunc(pointer, counter);
     introText.elementDeletion(".personal__text");
   }, 500);
