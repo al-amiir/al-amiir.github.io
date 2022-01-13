@@ -1,0 +1,66 @@
+body {
+  background-color: black;
+}
+.page__projects {
+  background-color: black;
+  z-index: 4000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // flex-direction: column;
+  iframe {
+    width: 90vw;
+    height: 90vh;
+  }
+  &-figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    margin: 5px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    color: white;
+    background-color: black;
+    @include respond(meduim-phone) {
+      flex-direction: column;
+    }
+  }
+  &-img {
+    width: 222px;
+    height: 300px;
+    object-fit: cover;
+    filter: contrast(1.1) saturate(1.1) drop-shadow(2px 4px 6px black);
+    @include respond(meduim-phone) {
+      width: 200px;
+    }
+  }
+  &-text {
+    font-size: 2rem;
+    margin-left: 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    @include respond(phone) {
+      font-size: 1rem;
+    }
+    @include respond(meduim-phone) {
+      margin-left: 0;
+    }
+    p {
+      filter: drop-shadow(2px 0px 3px black);
+      margin-bottom: 7px;
+    }
+    a {
+      //   width: 100px;
+      //   text-align: center;
+      text-decoration: none;
+      //   color: wheat;
+      //   background-color: #051c26;
+      //   padding: 3px 9px;
+      //   border-radius: 3px;
+      cursor: pointer;
+    }
+  }
+}
