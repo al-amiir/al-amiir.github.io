@@ -22,7 +22,7 @@ body {
   }
   &__portofolio {
     position: fixed;
-    right: 0;
+    right: 4.5vw;
     top: 32vh;
     display: flex;
     flex-direction: column;
@@ -34,6 +34,7 @@ body {
     border: 2px solid;
     font-weight: 700;
     padding: 14px;
+    box-shadow: 8px 8px #f8a72e;
     @include respond(phone) {
       font-size: 1.2rem;
       top: 25vh;
