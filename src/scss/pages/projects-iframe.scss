@@ -12,13 +12,12 @@ body {
     width: 90vw;
     height: 90vh;
   }
+
   &-figure {
     display: flex;
-    justify-content: center;
     align-items: center;
     padding: 14px;
     margin: 5px;
-    border-top: 1px solid white;
     border-bottom: 1px solid white;
     color: white;
     background-color: black;

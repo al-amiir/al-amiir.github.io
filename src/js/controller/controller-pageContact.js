@@ -1,13 +1,7 @@
 import anime from "animejs/lib/anime.es";
 
 let list = document.querySelectorAll(".page__contact-ul li");
-let colors = [
-  "rgb(165 42 42 / 63%)",
-  "rgb(0 0 0 / 50%)",
-  "rgb(10 102 194 / 63%)",
-  "rgb(81 170 78 / 63%)",
-  "rgb(198 85 169 /63%)",
-];
+let colors = ["rgb(165 42 42 / 63%)", "rgb(0 0 0 / 50%)", "rgb(10 102 194 / 63%)", "rgb(81 170 78 / 63%)", "rgb(198 85 169 /63%)", "rgb(165 42 42 / 63%)"];
 list.forEach((l, i) => {
   l.addEventListener("mouseover", (e) => {
     anime({
