@@ -278,8 +278,8 @@ body {
 
 iframe {
   width: 100vw;
-  height: 93vh;
-  margin: 44px 0 10px 0;
+  height: 89vh;
+  margin: 68px 0 10px 0;
 }
 
 .home {
@@ -359,7 +359,7 @@ iframe {
   }
 }
 .page__resume {
-  background-color: #1f1f1f;
+  background-color: white;
   z-index: 5000;
 }
 .page__certificates {
@@ -466,7 +466,7 @@ iframe {
 }
 
 .resume-body {
-  background-color: #1f1f1f;
+  background-color: #323639;
 }
 
 .resume {
