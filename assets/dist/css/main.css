@@ -665,7 +665,7 @@ body {
   display: flex;
   align-items: center;
   padding: 14px;
-  margin: 5px;
+  margin: 15px 0px;
   border-bottom: 1px solid white;
   color: white;
   background-color: black;
@@ -680,6 +680,7 @@ body {
   height: 300px;
   object-fit: cover;
   filter: contrast(1.1) saturate(1.1) drop-shadow(2px 4px 6px black);
+  margin-bottom: 15px;
 }
 @media only screen and (max-width: 28em) {
   .page__projects-img {
@@ -692,7 +693,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100px;
 }
 @media only screen and (max-width: 37.5em) {
   .page__projects-text {
@@ -702,6 +702,7 @@ body {
 @media only screen and (max-width: 28em) {
   .page__projects-text {
     margin-left: 0;
+    width: 100%;
   }
 }
 .page__projects-text p {
