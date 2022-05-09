@@ -1,5 +1,5 @@
 # First Portfolio
-It was my first portfolio with native javascript, Now i had a new portfolio with react, Node, Express and MongoDB. 
+It was my first portfolio with native javascript, Now i had a new portfolio with React, Node, Express and MongoDB. 
 
 ### Live Link 
 https://al-amiir.github.io/
